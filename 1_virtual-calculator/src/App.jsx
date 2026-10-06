@@ -2,8 +2,6 @@ import { useState } from "react";
 import Display from "./components/Display";
 import Button from "./components/Button";
 import "./App.css";
-
-// Các nút theo thứ tự từ trái sang phải, từ trên xuống dưới ("" là ô trống)
 const keys = [
   "Clear", "Delete", "", "/",
   "7", "8", "9", "*",
@@ -13,10 +11,7 @@ const keys = [
 ];
 
 function App() {
-  // State lưu biểu thức hiện tại, ví dụ "7+8/"
   const [expression, setExpression] = useState("");
-
-  // Tính kết quả khi bấm dấu =
   function calculate(current) {
     if (current === "") return;
     try {
@@ -32,7 +27,6 @@ function App() {
     }
   }
   function handleClick(label) {
-    // Đang hiện "Lỗi" thì bắt đầu lại từ đầu
     const current = expression === "Lỗi" ? "" : expression;
 
     if (label === "Clear") {
@@ -58,7 +52,7 @@ function App() {
             <Button
               key={index}
               label={label}
-              color={isOperator ? "#5b9bd5" : "#4caf50"}
+              color={isOperator ? "#a61515" : "#196720"}
               onClick={handleClick}
             />
           );
