@@ -1,0 +1,33 @@
+.cv {
+  max-width: 700px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  padding: 20px;
+  background: #374fc7;
+  color: white;
+  text-align: center;
+}
+
+.section {
+  padding: 10px 20px;
+}
+
+.section h2 {
+  color: #374fc7;
+  border-bottom: 2px solid #374fc7;
+}
+
+.project {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f2f2f2;
+}
+
+.footer {
+  padding: 10px;
+  background: #eeeeee;
+  text-align: center;
+}
